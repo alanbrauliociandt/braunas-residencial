@@ -1,0 +1,15 @@
+.footer-content {
+  background-color: #e0e0e0;
+  padding: 30px 0;
+}
+.info-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .info-footer {
+    flex-direction: column;
+  }
+}
