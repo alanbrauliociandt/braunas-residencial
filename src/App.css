@@ -8,6 +8,12 @@
   padding: 0 20px;
   margin: 0 auto;
 }
-.teste{
-  color: #fff;
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Ajuste a duração e a curva de tempo conforme necessário */
+}
+
+/* Defina a opacidade inicial para elementos com a classe "fade-in" */
+.fade-in:not(.isVisible) {
+  opacity: 0;
 }

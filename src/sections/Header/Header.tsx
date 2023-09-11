@@ -1,23 +1,32 @@
 import "./Header.scss";
-import whatsappIcon from '../../assets/info-wpp.png';
-import instagramIcon from '../../assets/info-insta.png';
-import emailIcon from '../../assets/info-mail.png';
+import whatsappIcon from "../../assets/info-wpp.png";
+import instagramIcon from "../../assets/info-insta.png";
+import emailIcon from "../../assets/info-mail.png";
 import logo from "../../assets/logo.png";
+import { useRef } from "react";
+import useIsElementVisible from "../../hooks/useIsElementVisible/useIsElementVisible";
 
 export function Header() {
-
+  const headerRef = useRef<HTMLDivElement>(null);
+  const isVisible = useIsElementVisible(headerRef);
+  
   function handleClickMenuMobile() {
     const mobileMenu = document.querySelector(".menu");
     mobileMenu?.classList.toggle("mobile-menu-open");
   }
 
   return (
-    <div className="general-container-header">
+    <header
+      id="header"
+      className={`general-container-header ${isVisible ? "fade-in" : ""}`}
+      ref={headerRef}
+      style={{ opacity: isVisible ? 1 : 0 }}
+    >
       <div className="info-top-header">
         <div className="social-icons">
           <img src={whatsappIcon} alt="Whatsapp" width="30px" />
           <img src={instagramIcon} alt="Instagram" width="30px" />
-          <img src={emailIcon} alt="Email" width="30px"/>
+          <img src={emailIcon} alt="Email" width="30px" />
         </div>
         <p>(31) 9XXXX-XXXX</p>
       </div>
@@ -48,8 +57,10 @@ export function Header() {
             </li>
           </ul>
         </nav>
-        <div className="mobile-menu-icon" onClick={handleClickMenuMobile}>&#9776;</div>
+        <div className="mobile-menu-icon" onClick={handleClickMenuMobile}>
+          &#9776;
+        </div>
       </div>
-    </div>
+    </header>
   );
 }
