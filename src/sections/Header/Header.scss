@@ -52,11 +52,14 @@
 .mobile-menu-icon {
   display: none;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 30px;
   color: #a7a7a7;
 }
 
 @media screen and (max-width: 1200px) {
+  .logo{
+    width: 100px;
+  }
   .menu {
     display: none;
   }

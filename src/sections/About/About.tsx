@@ -1,9 +1,19 @@
+import { useRef } from "react";
 import { Title } from "../../components/Title/Title";
 import "./About.scss";
+import useIsElementVisible from "../../hooks/useIsElementVisible/useIsElementVisible";
 
 export function About() {
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const isVisible = useIsElementVisible(aboutRef);
+
   return (
-    <section id="about" className="about-content">
+    <section
+      id="about"
+      className={`about-content ${isVisible ? "animation-side" : ""}`}
+      ref={aboutRef}
+      style={{ opacity: isVisible ? 1 : 0 }}
+    >
       <div className="container">
         <Title text="Sobre" />
         <p className="text-about">Residencial BRAÚNAS PARK</p>

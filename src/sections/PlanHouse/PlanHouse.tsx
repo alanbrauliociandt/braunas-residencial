@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { useState } from "react";
 import { Title } from "../../components/Title/Title";
-import slider1 from '../../assets/plantas/1.jpg';
-import slider2 from '../../assets/plantas/2.jpg';
-import slider3 from '../../assets/plantas/3.jpg';
-import slider4 from '../../assets/plantas/4.jpg';
-import './PlanHouse.scss';
+import slider1 from "../../assets/plantas/1.jpg";
+import slider2 from "../../assets/plantas/2.jpg";
+import slider3 from "../../assets/plantas/3.jpg";
+import slider4 from "../../assets/plantas/4.jpg";
+import "./PlanHouse.scss";
 
 export function PlanHouse() {
   const images = [slider1, slider2, slider3, slider4];
@@ -17,7 +17,6 @@ export function PlanHouse() {
   const prevSlide = () => {
     setCurrentSlide((currentSlide - 1 + images.length) % images.length);
   };
-  
 
   return (
     <section className="slider-plans-general-container">

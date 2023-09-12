@@ -31,7 +31,7 @@ export function Header() {
         <p>(31) 9XXXX-XXXX</p>
       </div>
       <div className="header">
-        <img src={logo} alt="Logo Braúnas Park" />
+        <img src={logo} alt="Logo Braúnas Park" className="logo"/>
         <nav className="menu">
           <ul>
             <li>
