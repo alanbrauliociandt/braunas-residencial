@@ -4,11 +4,9 @@ import instagramIcon from "../../assets/info-insta.png";
 import emailIcon from "../../assets/info-mail.png";
 import logo from "../../assets/logo.png";
 import { useRef } from "react";
-import useIsElementVisible from "../../hooks/useIsElementVisible/useIsElementVisible";
 
 export function Header() {
   const headerRef = useRef<HTMLDivElement>(null);
-  const isVisible = useIsElementVisible(headerRef);
   
   function handleClickMenuMobile() {
     const mobileMenu = document.querySelector(".menu");
@@ -18,9 +16,8 @@ export function Header() {
   return (
     <header
       id="header"
-      className={`general-container-header ${isVisible ? "fade-in" : ""}`}
+      className={`general-container-header`}
       ref={headerRef}
-      style={{ opacity: isVisible ? 1 : 0 }}
     >
       <div className="info-top-header">
         <div className="social-icons">

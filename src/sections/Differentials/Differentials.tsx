@@ -8,18 +8,14 @@ import roomWithSuiteIcon from "../../assets/opcoes-suite.png";
 
 import "./DIfferentials.scss";
 import { useRef } from "react";
-import useIsElementVisible from "../../hooks/useIsElementVisible/useIsElementVisible";
 
 export function Differentials() {
   const differentialsRef = useRef<HTMLDivElement>(null);
-  const isVisible = useIsElementVisible(differentialsRef);
 
   return (
     <section
       id="differential"
-      className={`${isVisible ? "animation-side" : ""}`}
       ref={differentialsRef}
-      style={{ opacity: isVisible ? 1 : 0 }}
     >
       <div className="container">
         <Title text="Diferenciais" />

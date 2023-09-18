@@ -1,12 +1,17 @@
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
+import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 import { Title } from "../../components/Title/Title";
 import "./Location.scss";
 
 export function Location() {
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyCGrFIq6LAZGDoZzywV9V0mIwKVrnDcEOg",
+    googleMapsApiKey: "AIzaSyDIqQovOUnoeE79i5FUn-LhYE-yJcA8G4o",
   });
+
+  const position = {
+    lat: -19.929490155876227,
+    lng: -43.94135100413374,
+  }
   return (
     <section className="location-content">
       <div className="container">
@@ -17,20 +22,22 @@ export function Location() {
           da Pampulha, Igreja São Francisco, etc) e com uma conexão diária com a
           Natureza.
         </p>
-        {isLoaded && (
-          <GoogleMap
-            mapContainerStyle={{
-              width: "100%",
-              height: "100%",
-            }}
-            center={{
-              lat: -19.922814755266646,
-              lng: -43.93986191915611,
-            }}
-          >
-            {/* Child components, such as markers, info windows, etc. */}
-            <></>
-          </GoogleMap>
+        {isLoaded ? (
+          <div style={{ height: "500px", marginTop: '20px' }}>
+            <GoogleMap
+              mapContainerStyle={{
+                width: "100%",
+                height: "100%",
+              }}
+              center={position}
+              zoom={19}
+            >
+              <Marker position={position}/>
+              <></>
+            </GoogleMap>
+          </div>
+        ) : (
+          <></>
         )}
       </div>
     </section>
@@ -47,24 +54,4 @@ export function Location() {
   //     >
   //     </GoogleMap>
   // );
-
-  //   return isLoaded ? (
-  //     <div style={{ height: '500px'}}>
-  //     <GoogleMap
-  //       mapContainerStyle={{
-  //         width: "100%",
-  //         height: "100%",
-  //       }}
-  //       center={{
-  //         lat: -19.922814755266646,
-  //         lng: -43.93986191915611,
-  //       }}
-  //     >
-  //       {/* Child components, such as markers, info windows, etc. */}
-  //       <></>
-  //     </GoogleMap>
-  //     </div>
-  //   ) : (
-  //     <></>
-  //   );
 }
