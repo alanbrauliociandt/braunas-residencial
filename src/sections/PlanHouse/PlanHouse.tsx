@@ -26,7 +26,7 @@ export function PlanHouse() {
   }, []);
 
   return (
-    <section className="slider-plans-general-container">
+    <section id="planhouse" className="slider-plans-general-container">
       <div className="container">
         <Title text="Plantas" />
         <div className="container-slider"  data-aos="fade-up">

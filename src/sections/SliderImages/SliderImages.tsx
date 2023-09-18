@@ -29,7 +29,7 @@ export function SliderImages() {
   
 
   return (
-    <section className="slider-images-general-container">
+    <section id="photos" className="slider-images-general-container">
       <div className="container">
         <Title text="Imagens" />
         <div className="container-slider"  data-aos="fade-up">

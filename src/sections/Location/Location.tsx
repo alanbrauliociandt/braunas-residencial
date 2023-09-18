@@ -21,7 +21,7 @@ export function Location() {
     });
   }, []);
   return (
-    <section className="location-content">
+    <section id="location" className="location-content">
       <div className="container"  data-aos="fade-up">
         <Title text="Localização" />
         <p className="subtitle-location">

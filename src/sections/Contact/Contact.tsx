@@ -23,7 +23,7 @@ export function Contact() {
   }
 
   return (
-    <section className="content-contact">
+    <section id="contact" className="content-contact">
       <div className="container"  data-aos="fade-up">
         <Title text="Entre em contato" />
         <p className="subtitle-contact">

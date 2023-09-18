@@ -11,7 +11,7 @@ export function Datasheet() {
     });
   }, []);
   return (
-    <section className="datasheet-content">
+    <section id="datasheet" className="datasheet-content">
       <div className="container"  data-aos="fade-up">
         <Title text="Ficha técnica" />
         <div className="datasheet">
