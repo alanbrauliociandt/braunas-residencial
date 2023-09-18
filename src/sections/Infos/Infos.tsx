@@ -5,13 +5,22 @@ import emailIcon from '../../assets/mail.png';
 import socialWpp from '../../assets/info-wpp.png';
 import socialInsta from '../../assets/info-insta.png';
 import socialMail from '../../assets/info-mail.png';
+import AOS from 'aos';
+import { useEffect } from "react";
+
 
 import './Infos.scss';
 
 export function Infos(){
+
+    useEffect(() => {
+        AOS.init({
+          duration : 1000
+        });
+      }, []);
     return (
         <section className="infos-content">
-            <div className="container">
+            <div className="container"  data-aos="fade-up">
                 <Title text="Informações" color="#fff"/>
                 <div className="info-address">
                     <img src={locationIcon} alt="Localização Braunas" width="50px"/>

@@ -1,6 +1,8 @@
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 import { Title } from "../../components/Title/Title";
 import "./Location.scss";
+import AOS from 'aos';
+import { useEffect } from "react";
 
 export function Location() {
   const { isLoaded } = useJsApiLoader({
@@ -12,9 +14,15 @@ export function Location() {
     lat: -19.929490155876227,
     lng: -43.94135100413374,
   }
+
+  useEffect(() => {
+    AOS.init({
+      duration : 1000
+    });
+  }, []);
   return (
     <section className="location-content">
-      <div className="container">
+      <div className="container"  data-aos="fade-up">
         <Title text="Localização" />
         <p className="subtitle-location">
           Em uma localização estratégica a menos de 1 KM da famosa Lagoa da

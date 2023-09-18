@@ -1,10 +1,18 @@
 import { Title } from "../../components/Title/Title";
 import "./Datasheet.scss";
+import AOS from 'aos';
+import { useEffect } from "react";
 
 export function Datasheet() {
+
+  useEffect(() => {
+    AOS.init({
+      duration : 1000
+    });
+  }, []);
   return (
     <section className="datasheet-content">
-      <div className="container">
+      <div className="container"  data-aos="fade-up">
         <Title text="Ficha técnica" />
         <div className="datasheet">
           <p>

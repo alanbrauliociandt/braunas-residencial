@@ -1,8 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Title } from "../../components/Title/Title";
 import "./Contact.scss";
+import AOS from "aos";
 
 export function Contact() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   const [infoContact, setInfoContact] = useState({
     name: "",
     email: "",
@@ -18,7 +24,7 @@ export function Contact() {
 
   return (
     <section className="content-contact">
-      <div className="container">
+      <div className="container"  data-aos="fade-up">
         <Title text="Entre em contato" />
         <p className="subtitle-contact">
           Venha descobrir pessoalmente tudo o que o Residencial Braunas tem a
