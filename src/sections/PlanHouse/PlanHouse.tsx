@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import AOS from 'aos';
 import { Title } from "../../components/Title/Title";
 import slider1 from "../../assets/plantas/1.jpg";
 import slider2 from "../../assets/plantas/2.jpg";
@@ -18,11 +19,17 @@ export function PlanHouse() {
     setCurrentSlide((currentSlide - 1 + images.length) % images.length);
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration : 1000
+    });
+  }, []);
+
   return (
     <section className="slider-plans-general-container">
       <div className="container">
         <Title text="Plantas" />
-        <div className="container-slider">
+        <div className="container-slider"  data-aos="fade-up">
           <div className="prev-slider" onClick={prevSlide}></div>
           <img src={images[currentSlide]} alt={`Slider ${currentSlide + 1}`} />
           <div className="next-slider" onClick={nextSlide}></div>

@@ -1,15 +1,20 @@
-import { useRef } from "react";
+import AOS from 'aos';
 import { Title } from "../../components/Title/Title";
 import "./About.scss";
+import { useEffect } from 'react';
 
 export function About() {
-  const aboutRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    AOS.init({
+      duration : 1000
+    });
+  }, []);
 
   return (
     <section
       id="about"
       className={`about-content`}
-      ref={aboutRef}
+      data-aos="fade-up"
     >
       <div className="container">
         <Title text="Sobre" />

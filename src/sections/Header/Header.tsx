@@ -3,11 +3,8 @@ import whatsappIcon from "../../assets/info-wpp.png";
 import instagramIcon from "../../assets/info-insta.png";
 import emailIcon from "../../assets/info-mail.png";
 import logo from "../../assets/logo.png";
-import { useRef } from "react";
-
 export function Header() {
-  const headerRef = useRef<HTMLDivElement>(null);
-  
+
   function handleClickMenuMobile() {
     const mobileMenu = document.querySelector(".menu");
     mobileMenu?.classList.toggle("mobile-menu-open");
@@ -17,7 +14,6 @@ export function Header() {
     <header
       id="header"
       className={`general-container-header`}
-      ref={headerRef}
     >
       <div className="info-top-header">
         <div className="social-icons">
@@ -28,7 +24,7 @@ export function Header() {
         <p>(31) 9XXXX-XXXX</p>
       </div>
       <div className="header">
-        <img src={logo} alt="Logo Braúnas Park" className="logo"/>
+        <img src={logo} alt="Logo Braúnas Park" className="logo" />
         <nav className="menu">
           <ul>
             <li>

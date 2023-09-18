@@ -1,3 +1,4 @@
+import AOS from "aos";
 import { Title } from "../../components/Title/Title";
 import localizationIcon from "../../assets/localizacao.png";
 import recreationAreaIcon from "../../assets/area-lazer.png";
@@ -7,42 +8,43 @@ import petsAreaIcon from "../../assets/espaco-exclusivo-pets.png";
 import roomWithSuiteIcon from "../../assets/opcoes-suite.png";
 
 import "./DIfferentials.scss";
-import { useRef } from "react";
+import { useEffect } from "react";
 
 export function Differentials() {
-  const differentialsRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
 
   return (
-    <section
-      id="differential"
-      ref={differentialsRef}
-    >
+    <section id="differential">
       <div className="container">
-        <Title text="Diferenciais" />
+        <Title text="Diferenciais"/>
         <div className="row">
-          <div className="box-differential">
+          <div className="box-differential" data-aos="fade-right">
             <img src={localizationIcon} alt="Braunas Localização" />
             <h2>Localização Excelente</h2>
           </div>
-          <div className="box-differential">
+          <div className="box-differential" data-aos="fade-up">
             <img src={recreationAreaIcon} alt="Braunas Área de lazer" />
             <h2>Área de lazer completa</h2>
           </div>
-          <div className="box-differential">
-            <img src={gatedCommunityIcon} alt="Braunas Condomínio" />
+          <div className="box-differential"  data-aos="fade-left" >
+            <img src={gatedCommunityIcon} alt="Braunas Condomínio"/>
             <h2>Condomínio fechado</h2>
           </div>
         </div>
         <div className="row">
-          <div className="box-differential">
+          <div className="box-differential"  data-aos="fade-right">
             <img src={financingIcon} alt="Braunas Financiamento Caixa" />
             <h2>Financiamento Caixa</h2>
           </div>
-          <div className="box-differential">
+          <div className="box-differential" data-aos="fade-up">
             <img src={petsAreaIcon} alt="Braunas Espaço exclusivo pets" />
             <h2>Espaço exclusivo para Pets</h2>
           </div>
-          <div className="box-differential">
+          <div className="box-differential"  data-aos="fade-left" >
             <img src={roomWithSuiteIcon} alt="Braunas Quartos e suítes" />
             <h2>
               2 e 3 quartos,
