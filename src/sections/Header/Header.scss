@@ -96,19 +96,18 @@
   .mobile-menu-open {
     display: block;
     position: absolute;
-    top: 150px;
+    top: 130px;
     right: 40px;
     background-color: #00525c;
-    padding: 10px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     z-index: 2;
+    padding: 20px 0;
   }
 
   .mobile-menu-open ul {
     flex-direction: column;
-    padding: 15px !important;
-    padding-left: 0 !important;
+    margin-left: 20px;
   }
 
   .mobile-menu-open li {
