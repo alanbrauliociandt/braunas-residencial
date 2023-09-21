@@ -97,7 +97,7 @@ export function Header() {
             </li>
           </ul>
         </nav>
-        <a href="#contact" className="menu-item-contact">
+        <a href="#contact" className="menu-item menu-item-contact">
           Fale conosco
         </a>
         <div className="mobile-menu-icon" onClick={handleClickMenuMobile}>
