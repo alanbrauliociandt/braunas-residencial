@@ -1,4 +1,4 @@
-import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
+import { GoogleMap, useJsApiLoader, MarkerF } from "@react-google-maps/api";
 import { Title } from "../../components/Title/Title";
 import "./Location.scss";
 import AOS from 'aos';
@@ -11,8 +11,8 @@ export function Location() {
   });
 
   const position = {
-    lat: -19.929490155876227,
-    lng: -43.94135100413374,
+    lat: -19.853689,
+    lng: -44.009220,
   }
 
   useEffect(() => {
@@ -38,9 +38,9 @@ export function Location() {
                 height: "100%",
               }}
               center={position}
-              zoom={19}
+              zoom={17}
             >
-              <Marker position={position}/>
+              <MarkerF position={position}/>
               <></>
             </GoogleMap>
           </div>
