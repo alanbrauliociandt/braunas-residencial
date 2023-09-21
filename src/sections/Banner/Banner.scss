@@ -1,6 +1,6 @@
 .banner {
   width: 100%;
-  height: 800px;
+  height: 600px;
   max-height: 800px;
   background: url("../../assets/banner-principal.jpg");
   background-size: 100%;
@@ -23,5 +23,11 @@
 @media screen and (max-width: 767px) {
   .banner {
     height: 180px;
+  }
+}
+
+@media screen and (min-width: 1800px) and (max-width: 3000px) {
+  .banner {
+    height: 800px;
   }
 }
