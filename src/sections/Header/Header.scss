@@ -4,11 +4,15 @@
 
 .info-top-header {
   background-color: #00525c;
+  padding: 0 20px;
+  height: 50px;
+}
+
+.content-top-header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-  height: 50px;
+  padding-top: 5px;
 }
 
 .info-top-header p {

@@ -47,12 +47,14 @@ export function Header() {
   return (
     <header id="header" className={`general-container-header`}>
       <div className="info-top-header">
+        <div className="container content-top-header">
           <div className="social-icons">
             <img src={whatsappIcon} alt="Whatsapp" width="30px" />
             <img src={instagramIcon} alt="Instagram" width="30px" />
             <img src={emailIcon} alt="Email" width="30px" />
           </div>
           <p>(31) 9XXXX-XXXX</p>
+        </div>
       </div>
       <div className="header container">
         <img src={logo} alt="Logo Braúnas Park" className="logo" />
