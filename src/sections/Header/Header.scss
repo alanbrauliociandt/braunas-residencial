@@ -28,6 +28,7 @@
 
 .header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
 }
@@ -45,14 +46,18 @@
 
 .menu ul li a {
   text-decoration: none;
-  text-transform: uppercase;
   color: #000000;
   transition: color 1s;
   font-size: 1.6rem;
 }
 
+.d-contact-none{
+  display: none;
+}
+
 .menu ul li a:hover {
   color: #00525c;
+  border-bottom: 1px solid #00525c;
 }
 .mobile-menu-icon {
   display: none;
@@ -61,12 +66,26 @@
   color: #a7a7a7;
 }
 
+.menu-item-contact{
+  text-transform: uppercase;
+  background-color: #00525c;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
 @media screen and (max-width: 1240px) {
   .logo{
     width: 100px;
   }
   .menu {
     display: none;
+  }
+
+  .d-contact-none{
+    display: block !important;
   }
 
   .mobile-menu-icon {
@@ -103,5 +122,9 @@
 
   .mobile-menu-open a:hover{
     color: #E0E0E0 !important;
+  }
+
+  .menu-item-contact{
+    display: none;
   }
 }

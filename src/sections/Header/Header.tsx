@@ -91,12 +91,15 @@ export function Header() {
               </a>
             </li>
             <li>
-              <a href="#contact" className="menu-item">
-                Contato
+              <a href="#contact" className="menu-item d-contact-none">
+                Fale conosco
               </a>
             </li>
           </ul>
         </nav>
+        <a href="#contact" className="menu-item-contact">
+          Fale conosco
+        </a>
         <div className="mobile-menu-icon" onClick={handleClickMenuMobile}>
           &#9776;
         </div>
