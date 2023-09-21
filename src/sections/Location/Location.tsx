@@ -3,6 +3,7 @@ import { Title } from "../../components/Title/Title";
 import "./Location.scss";
 import AOS from 'aos';
 import { useEffect } from "react";
+import pino from '../../assets/pino.png';
 
 export function Location() {
   const { isLoaded } = useJsApiLoader({
@@ -40,7 +41,7 @@ export function Location() {
               center={position}
               zoom={17}
             >
-              <MarkerF position={position}/>
+              <MarkerF position={position} icon={pino}/>
               <></>
             </GoogleMap>
           </div>
