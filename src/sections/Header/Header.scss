@@ -71,6 +71,7 @@
 
   .mobile-menu-icon {
     display: block;
+    margin-left: auto;
   }
 
   .mobile-menu-open {
@@ -88,6 +89,7 @@
   .mobile-menu-open ul {
     flex-direction: column;
     padding: 15px !important;
+    padding-left: 0 !important;
   }
 
   .mobile-menu-open li {
@@ -96,6 +98,7 @@
 
   .mobile-menu-open a {
     color: #fff !important;
+    font-size: 20px !important;
   }
 
   .mobile-menu-open a:hover{
