@@ -18,7 +18,7 @@ export function About() {
     >
       <div className="container">
         <Title text="Sobre" />
-        <p className="text-about">Residencial BRAÚNAS PARK</p>
+        <p className="text-about residencial-title">Residencial BRAÚNAS PARK</p>
         <p className="text-about">
           Seu espaço de conforto e comodidade A 1 KM da Lagoa da Pampulha
         </p>
@@ -44,7 +44,7 @@ export function About() {
           com a natureza.
         </p>
         <p className="text-about">
-          Tudo isso com a garantia CAIXA ECONÔMICA FEDERAL, dentro do programa
+          Tudo isso com a garantia <strong>CAIXA ECONÔMICA FEDERAL</strong>, dentro do programa
           Minha Casa Minha Vida com as melhores condições de finan- ciamento!
         </p>
       </div>
