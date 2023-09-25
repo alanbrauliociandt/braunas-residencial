@@ -20,8 +20,9 @@
 
 @media screen and (max-width: 1200px) {
     .row{
-        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
     }
+    
 
     .box-differential{
         margin:15px 0;

@@ -66,3 +66,14 @@
   justify-content: flex-end;
   margin-top: 20px;
 }
+
+@media screen and (max-width: 767px){
+    .container-slider {
+        p {
+          position: absolute;
+          bottom: 10%;
+          left: 13%;
+          width: 70%;
+        }
+    }
+}
