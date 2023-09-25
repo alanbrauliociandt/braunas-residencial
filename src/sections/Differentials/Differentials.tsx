@@ -24,7 +24,7 @@ export function Differentials() {
         <div className="row">
           <div className="box-differential" data-aos="fade-up">
             <img src={localizationIcon} alt="Braunas Localização" />
-            <h2>Localização <br/>Excelente</h2>
+            <h2>Excelente<br/>Localização </h2>
           </div>
           <div className="box-differential" data-aos="fade-up">
             <img src={recreationAreaIcon} alt="Braunas Área de lazer" />

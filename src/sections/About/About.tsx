@@ -31,7 +31,7 @@ export function About() {
         <p className="text-about">
           Torre única, com apês de 02 e 03 quartos (opções com suíte), em um
           Condomínio com atmosfera exclusiva e intimista e lazer que contempla
-          uma piscina convidativa, academia equipada, espaço gourmet, quadra
+          uma piscina convidativa, academia, espaço gourmet, quadra
           society, salão de festas, playground, pet place, tudo isso em um
           espaço repleto de Natureza!!!{" "}
         </p><br/>
