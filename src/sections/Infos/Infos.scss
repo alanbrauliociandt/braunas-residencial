@@ -14,3 +14,13 @@
     color: #fff;
     text-decoration: none;
 }
+
+@media screen and (max-width: 767px) {
+    .info-address img{
+        width: 45px;
+        height: 40px;
+    }
+    .info-address p, .info-address a {
+        font-size: 16px;
+    }
+}
