@@ -28,16 +28,16 @@ export function Infos(){
                 </div>
                 <div className="info-address">
                     <img src={foneIcon} alt="Telefone Residencial Braunas" width="60px"/>
-                    <p>(31) 9XXXX - XXXX</p>
+                    <p><a href="tel:+5531971613655">(31) 97161 - 3655</a></p>
                 </div>
                 <div className="info-address">
                     <img src={emailIcon} alt="Email Residencial Braunas" width="70px" height="55px"/>
-                    <p>braunaspark@gmail.com</p>
+                    <p> <a href="mailto:contato@residencialbraunaspark.com.br" rel="noreferrer">contato@residencialbraunaspark.com.br</a></p>
                 </div>
                 <div className="social-icons">
-                    <a href="#" rel="noreferrer"><img src={socialWpp} alt="Whatsapp Braunas" width="50px"/></a>
+                    <a href="https://api.whatsapp.com/send?phone=5531971613655" target="_blank" rel="noreferrer"><img src={socialWpp} alt="Whatsapp Braunas" width="50px"/></a>
                     <a href="#" rel="noreferrer"><img src={socialInsta} alt="Insta Braunas" width="50px"/></a>
-                    <a href="#" rel="noreferrer"><img src={socialMail} alt="Email Braunas" width="50px"/></a>
+                    <a href="mailto:contato@residencialbraunaspark.com.br" rel="noreferrer"><img src={socialMail} alt="Email Braunas" width="50px"/></a>
                 </div>
             </div>
         </section>

@@ -4,8 +4,9 @@
 
 .info-top-header {
   background-color: #00525c;
-  padding: 0 20px;
+  padding: 5px 20px;
   height: 50px;
+  box-sizing: border-box;
 }
 
 .content-top-header{
@@ -15,9 +16,10 @@
   padding-top: 5px;
 }
 
-.info-top-header p {
+.info-top-header p, .info-top-header a {
   color: #ffffff;
   font-size: 24px;
+  text-decoration: none;
 }
 
 .social-icons {
@@ -33,6 +35,9 @@
   padding: 20px;
 }
 
+.logo{
+  width: 120px;
+}
 .menu ul {
   display: flex;
   padding: 0;

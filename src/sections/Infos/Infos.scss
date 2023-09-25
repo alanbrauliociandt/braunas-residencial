@@ -9,7 +9,8 @@
     gap: 15px;
     margin: 15px 0;
 }
-.info-address p {
+.info-address p, .info-address a {
     font-size: 24px;
     color: #fff;
+    text-decoration: none;
 }

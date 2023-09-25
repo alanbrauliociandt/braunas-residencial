@@ -49,11 +49,11 @@ export function Header() {
       <div className="info-top-header">
         <div className="container content-top-header">
           <div className="social-icons">
-            <img src={whatsappIcon} alt="Whatsapp" width="30px" />
-            <img src={instagramIcon} alt="Instagram" width="30px" />
-            <img src={emailIcon} alt="Email" width="30px" />
+            <a href="https://api.whatsapp.com/send?phone=5531971613655" target="_blank" rel="noreferrer"> <img src={whatsappIcon} alt="Whatsapp" width="30px" /></a>
+            <a href="#"><img src={instagramIcon} alt="Instagram" width="30px" /></a>
+            <a href="mailto:contato@residencialbraunaspark.com.br" rel="noreferrer"><img src={emailIcon} alt="Email" width="30px" /></a>
           </div>
-          <p>(31) 9XXXX-XXXX</p>
+          <p><a href="tel:+5531971613655" rel="noreferrer">(31) 97161 - 3655</a></p>
         </div>
       </div>
       <div className="header container">

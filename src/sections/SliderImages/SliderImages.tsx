@@ -1,41 +1,63 @@
-import { useEffect, useState } from 'react';
-import AOS from 'aos';
+import { useEffect, useState } from "react";
+import AOS from "aos";
 import { Title } from "../../components/Title/Title";
-import slider1 from '../../assets/slider-images/1.jpg';
-import slider2 from '../../assets/slider-images/2.jpg';
-import slider3 from '../../assets/slider-images/3.jpg';
-import slider4 from '../../assets/slider-images/4.jpg';
-import slider5 from '../../assets/slider-images/5.jpg';
-import slider6 from '../../assets/slider-images/6.jpg';
-import './SliderImages.scss';
+import slider1 from "../../assets/slider-images/1.jpg";
+import slider2 from "../../assets/slider-images/2.jpg";
+import slider3 from "../../assets/slider-images/3.jpg";
+import slider4 from "../../assets/slider-images/4.jpg";
+import slider5 from "../../assets/slider-images/5.jpg";
+import slider6 from "../../assets/slider-images/6.jpg";
+import "./SliderImages.scss";
 
 export function SliderImages() {
-  const images = [slider1, slider2, slider3, slider4, slider5, slider6];
+  const imageObjects = [
+    { image: slider1, legend: null },
+    { image: slider2, legend: null },
+    { image: slider3, legend: null },
+    { image: slider4, legend: null },
+    { image: slider5, legend: "Imagem ilustrativa com sugestão de decoração. Os móveis, objetos, revestimentos e demais acabamentos não fazem parte do Contrato." },
+    {
+      image: slider6,
+      legend: null
+    },
+  ];
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
-    setCurrentSlide((currentSlide + 1) % images.length);
+    setCurrentSlide((currentSlide + 1) % imageObjects.length);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((currentSlide - 1 + images.length) % images.length);
+    setCurrentSlide(
+      (currentSlide - 1 + imageObjects.length) % imageObjects.length
+    );
   };
 
   useEffect(() => {
     AOS.init({
-      duration : 1000
+      duration: 1000,
     });
   }, []);
-  
 
   return (
     <section id="photos" className="slider-images-general-container">
       <div className="container">
         <Title text="Imagens" />
-        <div className="container-slider"  data-aos="fade-up">
+        <div className="container-slider" data-aos="fade-up">
           <div className="prev-slider" onClick={prevSlide}></div>
-          <img src={images[currentSlide]} alt={`Slider ${currentSlide + 1}`} />
+          <img
+            src={imageObjects[currentSlide].image}
+            alt={`Slider ${currentSlide + 1}`}
+          />
+          {imageObjects[currentSlide].legend && (
+            <p className="legend-image">{imageObjects[currentSlide].legend}</p>
+          )}
           <div className="next-slider" onClick={nextSlide}></div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="content-legend-slider">
+          <p>IMAGEM ILUSTRATIVA</p>
         </div>
       </div>
     </section>
