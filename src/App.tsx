@@ -10,7 +10,6 @@ import { Datasheet } from './sections/Datasheet/Datasheet';
 import { Infos } from './sections/Infos/Infos';
 import { Contact } from './sections/Contact/Contact';
 import { Footer } from './sections/Footer/Footer';
-import { SecondAbout } from './sections/SecondAbout/SecondAbout';
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
       <Header/>
       <Banner/>
       <About/>
-      <SecondAbout/>
       <Differentials/>
       <SliderImages />
       <PlanHouse />

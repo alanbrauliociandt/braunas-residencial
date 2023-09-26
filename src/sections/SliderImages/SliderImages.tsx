@@ -11,15 +11,15 @@ import "./SliderImages.scss";
 
 export function SliderImages() {
   const imageObjects = [
-    { image: slider1, legend: null },
-    { image: slider2, legend: null },
-    { image: slider3, legend: null },
-    { image: slider4, legend: null },
-    { image: slider5, legend: "Imagem ilustrativa com sugestão de decoração. Os móveis, objetos, revestimentos e demais acabamentos não fazem parte do Contrato." },
+    { image: slider1, legend: "Pet Place" },
+    { image: slider2, legend: "Pscina" },
+    { image: slider3, legend: "Playground" },
+    { image: slider4, legend: "Quadra" },
     {
       image: slider6,
-      legend: null
+      legend: "Salão"
     },
+    { image: slider5, legend: "Quarto (Imagem ilustrativa com sugestão de decoração. Os móveis, objetos, revestimentos e demais acabamentos não fazem parte do Contrato.)" },
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
 

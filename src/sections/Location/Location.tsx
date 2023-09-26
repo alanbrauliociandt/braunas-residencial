@@ -12,8 +12,8 @@ export function Location() {
   });
 
   const position = {
-    lat: -19.853689,
-    lng: -44.009220,
+    lat: -19.853977,
+    lng: -44.010795,
   }
 
   useEffect(() => {
@@ -39,7 +39,7 @@ export function Location() {
                 height: "100%",
               }}
               center={position}
-              zoom={17}
+              zoom={20}
             >
               <MarkerF position={position} icon={pino}/>
               <></>
