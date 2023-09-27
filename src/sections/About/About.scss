@@ -6,7 +6,8 @@
 }
 
 .text-about {
-    font-size: 24px;
+    font-size: 18px;
+    line-height: 26px;
     color: #00525c;
     margin: 15px 0;
 }
@@ -24,15 +25,26 @@
     justify-content: center;
     gap: 30px;
 }
-
+.image-about{
+    display: flex;
+    justify-content: flex-end;
+}
 .image-about img{
     max-width: 100%;
     margin-top: 20px;
 }
 
+@media screen and (max-width: 1280px) {
+    .image-about{
+        display: flex;
+        justify-content: center;
+    }
+}
 @media screen and (max-width: 767px) {
+
+  
     .text-about {
-        font-size: 24px;
+        font-size: 17px;
     }
 
     .residencial-title{

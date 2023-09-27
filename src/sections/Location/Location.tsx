@@ -39,7 +39,7 @@ export function Location() {
                 height: "100%",
               }}
               center={position}
-              zoom={20}
+              zoom={18}
             >
               <MarkerF position={position} icon={pino}/>
               <></>
