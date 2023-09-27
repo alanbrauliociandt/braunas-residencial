@@ -7,6 +7,7 @@ import slider3 from "../../assets/slider-images/3.jpg";
 import slider4 from "../../assets/slider-images/4.jpg";
 import slider5 from "../../assets/slider-images/5.jpg";
 import slider6 from "../../assets/slider-images/6.jpg";
+import slider7 from "../../assets/slider-images/7.jpg";
 import "./SliderImages.scss";
 
 export function SliderImages() {
@@ -19,6 +20,7 @@ export function SliderImages() {
       image: slider6,
       legend: "Salão"
     },
+    { image: slider7, legend: "Sala de estar (Imagem ilustrativa com sugestão de decoração. Os móveis, objetos, revestimentos e demais acabamentos não fazem parte do Contrato.)" },
     { image: slider5, legend: "Quarto (Imagem ilustrativa com sugestão de decoração. Os móveis, objetos, revestimentos e demais acabamentos não fazem parte do Contrato.)" },
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
