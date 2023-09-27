@@ -55,7 +55,7 @@ export function About() {
             <br />
 
             <p className="text-about">
-              Tudo isso com a garantia <strong>CAIXA ECONOMICA FEDERAL</strong>,
+              Tudo isso com a garantia <strong>CAIXA ECONOMICA FEDERAL</strong>
               e do Programa Minha Casa<br/> Minha Vida com as melhores condições de
               financiamento!
             </p>
