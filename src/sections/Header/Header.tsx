@@ -75,10 +75,10 @@ export function Header() {
               rel="noreferrer"
             >
               {" "}
-              <img src={whatsappIcon} alt="Whatsapp" width="30px" />
+              <img src={whatsappIcon} alt="Whatsapp" width="30px" className="wpp-cellphone"/>
             </a>
             <p>
-              <a href="tel:+5531971613655" rel="noreferrer">
+              <a href="tel:+5531971613655" rel="noreferrer" className="cellphone-number">
                 (31) 97161 - 3655
               </a>
             </p>

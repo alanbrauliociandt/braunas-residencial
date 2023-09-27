@@ -82,6 +82,18 @@
 }
 
 @media screen and (max-width: 1240px) {
+  .wpp-cellphone{
+    display: none;
+  }
+  .cellphone-number{
+    font-size: 18px !important;
+  }
+  .info-top-header {
+    height: 90px;
+  }
+  .content-top-header{
+    flex-direction: column;
+  }
   .logo{
     width: 100px;
   }
