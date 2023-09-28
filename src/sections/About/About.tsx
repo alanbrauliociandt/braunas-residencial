@@ -20,7 +20,7 @@ export function About() {
             <img src={imageSobre} alt="Sobre o Braúnas Residencial Park" className="photo-about"/>
           </div>
           <div className="text-general-about">
-            <p className="text-about residencial-title">
+            <p className="residencial-title">
               Residencial BRAÚNAS PARK
             </p>
 
