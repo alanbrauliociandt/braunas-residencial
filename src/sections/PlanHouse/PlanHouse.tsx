@@ -9,7 +9,7 @@ import slider5 from "../../assets/plantas/5.jpg";
 import "./PlanHouse.scss";
 
 export function PlanHouse() {
-  const images = [slider1, slider2, slider3, slider4, slider5];
+  const images = [slider5, slider1, slider2, slider3, slider4];
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
