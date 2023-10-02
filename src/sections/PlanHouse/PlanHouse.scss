@@ -40,3 +40,20 @@
     transform: rotate(225deg);
     cursor: pointer;
 }
+
+@media screen and (max-width: 767px){
+    .container-slider {
+    
+      .prev-slider {
+        top: 35%;
+        padding: 15px;
+      }
+    
+      .next-slider {
+        top: 35%;
+        padding: 15px;
+      }
+    }
+    
+  }
+  
