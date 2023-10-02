@@ -101,7 +101,7 @@ export function Header() {
             </li>
             <li>
               <a href="#photos" className="menu-item">
-                Fotos
+                Imagens
               </a>
             </li>
             <li>

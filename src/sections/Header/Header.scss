@@ -46,12 +46,14 @@
 
 .menu ul li {
   list-style: none;
-  margin-right: 15px;
+  margin-right: 25px;
 }
 
 .menu ul li a {
   text-decoration: none;
+  border-bottom: 1px solid #00525c;
   color: #000000;
+  padding-bottom: 2px;
   transition: color 1s;
   font-size: 1.6rem;
 }
@@ -60,10 +62,6 @@
   display: none;
 }
 
-.menu ul li a:hover {
-  color: #00525c;
-  border-bottom: 1px solid #00525c;
-}
 .mobile-menu-icon {
   display: none;
   cursor: pointer;

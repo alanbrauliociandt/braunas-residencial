@@ -23,29 +23,29 @@ export function Differentials() {
         <Title text="Diferenciais"/>
         <div className="row">
           <div className="box-differential" data-aos="fade-up">
-            <img src={localizationIcon} alt="Braunas Localização" />
+            <img src={localizationIcon} alt="Braunas Localização" height="80px"/>
             <h2>Excelente<br/>Localização </h2>
           </div>
           <div className="box-differential" data-aos="fade-up">
-            <img src={recreationAreaIcon} alt="Braunas Área de lazer" />
+            <img src={recreationAreaIcon} alt="Braunas Área de lazer" height="80px" />
             <h2>Área de lazer</h2>
           </div>
           <div className="box-differential"  data-aos="fade-up" >
-            <img src={gatedCommunityIcon} alt="Braunas Condomínio"/>
+            <img src={gatedCommunityIcon} alt="Braunas Condomínio" height="80px"/>
             <h2>Condomínio <br/>fechado</h2>
           </div>
         </div>
         <div className="row">
           <div className="box-differential"  data-aos="fade-up">
-            <img src={financingIcon} alt="Braunas Financiamento Caixa" />
+            <img src={financingIcon} alt="Braunas Financiamento Caixa" height="80px" />
             <h2>Financiamento<br/> Caixa</h2>
           </div>
           <div className="box-differential" data-aos="fade-up">
-            <img src={petsAreaIcon} alt="Braunas Espaço exclusivo pets" />
+            <img src={petsAreaIcon} alt="Braunas Espaço exclusivo pets" height="80px"/>
             <h2>Espaço exclusivo<br/> para Pets</h2>
           </div>
           <div className="box-differential"  data-aos="fade-up" >
-            <img src={roomWithSuiteIcon} alt="Braunas Quartos e suítes" />
+            <img src={roomWithSuiteIcon} alt="Braunas Quartos e suítes" height="80px" />
             <h2>
               2 e 3 quartos,
               <br />
