@@ -2,6 +2,8 @@ import AOS from "aos";
 import { Title } from "../../components/Title/Title";
 import "./About.scss";
 import imageSobre from "../../assets/image-sobre.png";
+import mcmvImg from "../../assets/MCMV.png";
+import caixaImg from '../../assets/CAIXA.png';
 import { useEffect } from "react";
 
 export function About() {
@@ -58,8 +60,8 @@ export function About() {
             <br />
 
             <p className="text-about">
-              Tudo isso com a garantia <strong>CAIXA ECONOMICA FEDERAL </strong>
-              e do <strong>Programa Minha Casa Minha Vida</strong> com as
+              Tudo isso com a garantia <strong>CAIXA ECONOMICA FEDERAL </strong> <img src={caixaImg} alt="Financiamento Residencial Braúnas" width="50px"/>{" "}
+              e do <strong>Programa Minha Casa Minha Vida</strong> <img src={mcmvImg} alt="Financiamento Residencial Braúnas" width="50px"/>{" "} com as
               melhores condições de financiamento!
             </p>
           </div>
