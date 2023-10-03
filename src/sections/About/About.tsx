@@ -61,7 +61,7 @@ export function About() {
 
             <p className="text-about">
               Tudo isso com a garantia <strong>CAIXA ECONOMICA FEDERAL </strong> (<img src={caixaImg} alt="Financiamento Residencial Braúnas" width="50px"/>){" "}
-              e do <strong>Programa Minha Casa Minha Vida</strong> (<img src={mcmvImg} alt="Financiamento Residencial Braúnas" height="25px"/>){" "} com as
+              e do <strong>PROGRAMA MINHA CASA MINHA VIDA</strong> (<img src={mcmvImg} alt="Financiamento Residencial Braúnas" height="25px"/>){" "} com as
               melhores condições de financiamento!
             </p>
           </div>
