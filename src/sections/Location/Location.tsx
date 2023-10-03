@@ -26,7 +26,7 @@ export function Location() {
       <div className="container"  data-aos="fade-up">
         <Title text="Localização" />
         <p className="subtitle-location">
-          Em uma localização estratégica a menos de 1 KM da famosa Lagoa da
+          Em uma localização estratégica a menos de 2 minutos da famosa Lagoa da
           Pampulha, proporcionando fácil acesso aos seus encantos (Museu de Arte
           da Pampulha, Igreja São Francisco, etc) e com uma conexão diária com a
           Natureza.
