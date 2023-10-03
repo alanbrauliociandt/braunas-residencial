@@ -18,7 +18,7 @@ function App() {
       <Header/>
       <Banner/>
       <About/>
-      {/* <Differentials/> */}
+      <Differentials/>
       <SecondDifferentials/>
       <SliderImages />
       <PlanHouse />
