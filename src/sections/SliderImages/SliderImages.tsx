@@ -8,12 +8,14 @@ import slider4 from "../../assets/slider-images/4.jpg";
 import slider5 from "../../assets/slider-images/5.jpg";
 import slider6 from "../../assets/slider-images/6.jpg";
 import slider7 from "../../assets/slider-images/7.jpg";
+import slider8 from '../../assets/slider-images/8.jpg';
 import "./SliderImages.scss";
 
 export function SliderImages() {
   const imageObjects = [
     { image: slider2, legend: "Piscina" },
     { image: slider4, legend: "Quadra gramada" },
+    { image: slider8, legend: 'Academia'},
     {
       image: slider6,
       legend: "Salão de festas",

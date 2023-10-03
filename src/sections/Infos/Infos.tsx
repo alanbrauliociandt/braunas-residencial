@@ -24,7 +24,7 @@ export function Infos(){
                 <Title text="Informações" color="#fff"/>
                 <div className="info-address">
                     <img src={locationIcon} alt="Localização Braunas" width="50px"/>
-                    <p>Rua Mena da Gangorra n 50, Braúnas</p>
+                    <p>Rua Mena da Gangorra n 240, Braúnas</p>
                 </div>
                 <div className="info-address">
                     <img src={foneIcon} alt="Telefone Residencial Braunas" width="60px"/>

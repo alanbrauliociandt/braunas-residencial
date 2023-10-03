@@ -19,7 +19,7 @@ export function Datasheet() {
             <strong>Produto:</strong> Apartamentos em Contagem/MG
           </p>
           <p>
-            <strong>Endereço:</strong> Rua Mena da gangorra, 50 (Região da
+            <strong>Endereço:</strong> Rua Mena da gangorra, 240 (Região da
             Pampulha - Contagem/MG)
           </p>
           <p>
@@ -27,7 +27,7 @@ export function Datasheet() {
           </p>
           <p>
             <strong>Área de lazer:</strong> Salão de Festas, Playground, Espaço
-            Gourmet, Piscina, quadra, academia, pet place, Pomar
+            Gourmet, Piscina, Quadra, Academia, Pet place, Pomar
           </p>
           <p>
             <strong>Número de unidades:</strong> 92
