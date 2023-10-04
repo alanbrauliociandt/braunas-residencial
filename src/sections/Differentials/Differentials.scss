@@ -1,27 +1,22 @@
-.teste {
-    display: flex;
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin-bottom: 40px;
-    justify-content: center;
 }
 
-.box-differential-two {
+.box-differential {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
     gap: 15px;
-    background-color: #F6F6F6;
-    padding: 20px;
-    box-sizing: border-box;
-    margin: 0 10px;
     cursor: pointer;
-    position: relative;
     
 
     img {
         cursor: pointer;
-        
+        position: relative;
     }
 
     &:hover {
@@ -32,8 +27,8 @@
 
     p {
         position: absolute;
-        top: 100%;
-        width: 400px;
+        left: 65%;
+        width: 300px;
         border-radius: 10px;
         background-color: #00525c;
         color: white;
@@ -41,7 +36,8 @@
         padding: 10px;
         opacity: 0;
         transition: opacity 0.3s;
-        z-index: 10000;
+        font-weight: normal;
+        font-size: 14px;
     }
 }
 
@@ -52,16 +48,23 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .teste {
+    .row {
         display: flex;
         flex-direction: column;
     }
 
-    .box-differential-two {
+    .box-differential {
         margin: 15px 0;
     }
 
-    .box-differential-two h2{
+    .box-differential {
+        p {
+            top: 45%;
+            left: 0%;
+        }
+    }
+
+    .box-differential h2 {
         text-transform: uppercase;
         font-weight: normal;
         font-size: 16px;

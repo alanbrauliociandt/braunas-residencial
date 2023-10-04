@@ -10,7 +10,6 @@ import { Datasheet } from './sections/Datasheet/Datasheet';
 import { Infos } from './sections/Infos/Infos';
 import { Contact } from './sections/Contact/Contact';
 import { Footer } from './sections/Footer/Footer';
-import { SecondDifferentials } from './sections/SecondDifferentials/SecondDifferentials';
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
       <Banner/>
       <About/>
       <Differentials/>
-      <SecondDifferentials/>
       <SliderImages />
       <PlanHouse />
       <Location />
