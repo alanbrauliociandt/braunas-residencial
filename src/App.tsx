@@ -10,6 +10,7 @@ import { Datasheet } from './sections/Datasheet/Datasheet';
 import { Infos } from './sections/Infos/Infos';
 import { Contact } from './sections/Contact/Contact';
 import { Footer } from './sections/Footer/Footer';
+import { EvolutionWork } from './sections/EvolutionWork/EvolutionWork';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <PlanHouse />
       <Location />
       <Datasheet/>
+      <EvolutionWork/>
       <Infos />
       <Contact />
       <Footer/>

@@ -51,16 +51,4 @@ export function Location() {
       </div>
     </section>
   );
-  //     <GoogleMap
-  //       mapContainerStyle={{
-  //           width: '100%',
-  //           height: '100%'
-  //       }}
-  //       center={{
-  //           lat: -19.857474180491245,
-  //           lng: -44.016939850757424,
-  //       }}
-  //     >
-  //     </GoogleMap>
-  // );
 }
