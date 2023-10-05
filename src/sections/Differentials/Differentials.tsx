@@ -50,7 +50,7 @@ export function Differentials() {
             <p>
               Uma área de lazer que proporciona aos moradores várias opções de
               diversão, oferecendo segurança para as crianças e tranquilidade
-              para os pais. Espaços que possibilitam momentos felizes para você,
+              para os pais além de contar com um belíssimo pomar. Espaços que possibilitam momentos felizes para você,
               seus amigos e familiares!
             </p>
           </div>
@@ -65,10 +65,10 @@ export function Differentials() {
               fechado
             </h2>
             <p>
-              Com o objetivo de termos um condomínio sustentável e maior
+              Torre única com elevedor, com o objetivo de termos um condomínio sustentável e maior
               economia, o Braúnas Park conta com sensor de presença e energia
               fotovoltaica nas áreas comuns do prédio. Guarita com código de
-              acesso e porteiro 24 horas, e um locker para encomendas. Com toda
+              acesso e porteiro 24 horas, e um locker para encomendas. O condomínio também possui coleta seletiva. Com toda
               segurança e conforto!
             </p>
           </div>
@@ -128,7 +128,7 @@ export function Differentials() {
               Em uma torre única, temos exclusivos apartamentos de 03 quartos com suíte na
               região. Opções de cobertura com uma vista incrível. Apartamentos
               com acabamento diferenciado, com piso laminado nas salas e quartos
-              e cerâmica nos banheiros e cozinha. <br/>
+              e cerâmica nos banheiros e cozinha. Os apartamentos também possuem dispositivo economizador de água.<br/>
               Opções de apartamentos com 2 vagas de garagem e vaga coberta.
             </p>
           </div>

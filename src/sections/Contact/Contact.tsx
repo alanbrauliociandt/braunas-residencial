@@ -59,6 +59,8 @@ export function Contact() {
               placeholder="Telefone"
             />
 
+            <textarea id="mensagem" placeholder="Deixe sua mensagem"></textarea>
+
             <input type="button" value="Enviar" />
           </div>
         </form>
